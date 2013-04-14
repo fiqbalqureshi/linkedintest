@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   
   def linkedin_client
 	if @linkedin_client.nil?
-		@linkedin_client = LinkedIn::Client.new("rgup3vrlcnca", "f6kRE75yqDTSorVu")
+		@linkedin_client = LinkedIn::Client.new(LINKEDIN_APP_ID, LINKEDIN_SECRET)
 	end
 	@linkedin_client
   end

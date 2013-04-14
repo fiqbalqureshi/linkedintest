@@ -1,0 +1,2 @@
+LINKEDIN_APP_ID = "rgup3vrlcnca"
+LINKEDIN_SECRET = "f6kRE75yqDTSorVu"
