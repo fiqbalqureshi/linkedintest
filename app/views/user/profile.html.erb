@@ -1,0 +1,18 @@
+<h2><%= @profile.first_name %> <%= @profile.last_name %></h2>
+<h3><%= @profile.headline %></h3>
+<% if @profile.positions && @profile.positions.total > 0 %>
+<h4>Positions</h4>
+<ul>
+<% @profile.positions.all.each do |position| %>
+<li><%= position.title %> <i>in <%= position.company.name %></i></li>
+<% end %>
+<ul>
+<% end %>
+<% if @profile.educations && @profile.educations.total > 0 %>
+<h4>Education</h4>
+<ul>
+<% @profile.educations.all.each do |education| %>
+<%= education.inspect %>
+<% end %>
+<ul>
+<% end %>
